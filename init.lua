@@ -9,6 +9,8 @@ end
 
 -- stylua: ignore start
 require('packer').startup(function(use)
+  use 'fatih/vim-go'
+  use 'mattn/vim-goimports'
   use 'wbthomason/packer.nvim'                                                    -- Package manager
   use 'tpope/vim-fugitive'                                                        -- Git commands in nvim
   use 'tpope/vim-rhubarb'                                                         -- Fugitive-companion to interact with github
@@ -65,6 +67,9 @@ vim.o.hlsearch = false
 -- Make line numbers default
 vim.wo.relativenumber = true
 -- vim.wo.number = true
+
+-- Allow yank into clipboard
+vim.opt.clipboard='unnamed'
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
