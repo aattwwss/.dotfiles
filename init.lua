@@ -69,7 +69,7 @@ vim.wo.relativenumber = true
 -- vim.wo.number = true
 
 -- Allow yank into clipboard
-vim.opt.clipboard='unnamed'
+vim.opt.clipboard='unnamedplus'
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
