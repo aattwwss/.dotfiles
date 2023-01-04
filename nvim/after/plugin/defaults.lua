@@ -18,8 +18,12 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+vim.g.netrw_browse_split = 0
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 25
 
 vim.g.mapleader = " "
+
 vim.keymap.set({ 'i' }, 'kj', '<Esc>', { silent = true })
 vim.keymap.set("n", "<leader>E", ":Explore<CR>")
 vim.keymap.set("n", "<leader>f", ":Format<CR>")
