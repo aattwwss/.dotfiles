@@ -1,3 +1,5 @@
+echo "Port forwarding to arm2"
+
 ssh -AN arm2 \
 -L 51821:localhost:51821 \
 -L 5432:localhost:5432 \
@@ -6,4 +8,3 @@ ssh -AN arm2 \
 -L 15672:localhost:15672 \
 -L 7070:localhost:7070 \
 
-echo "Port forwarding to arm2"
