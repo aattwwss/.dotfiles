@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Calculates the needed popup width and opens the tmux-sessionizer
 
-CONF="$HOME/.config/tmux-sessionizer/tmux-sessionizer.conf"
+CONF="${XDG_CONFIG_HOME:-$HOME/.config}/tmux-sessionizer/tmux-sessionizer.conf"
 
 [ -f "$CONF" ] || exit 1
 
