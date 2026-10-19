@@ -267,7 +267,7 @@ find_dirs() {
         base="${path##*/}"
         while IFS= read -r d; do
             printf '%s|%s|%s\n' "${d##*/}" "$base" "$d"
-        done < <(find "$path" -mindepth 1 -maxdepth "${depth:-${TS_MAX_DEPTH:-1}}" -path '*/.git' -prune -o -type d -print)
+        done < <(find -L "$path" -mindepth 1 -maxdepth "${depth:-${TS_MAX_DEPTH:-1}}" -path '*/.git' -prune -o -type d -print)
     done
 }
 

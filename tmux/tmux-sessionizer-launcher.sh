@@ -24,7 +24,7 @@ for entry in "${TS_SEARCH_PATHS[@]}"; do
     while IFS= read -r d; do
         name="${d##*/}"
         [[ ${#name} -gt $max_name ]] && max_name=${#name}
-    done < <(find "$path" -mindepth 1 -maxdepth 1 -type d)
+    done < <(find -L "$path" -mindepth 1 -maxdepth 1 -type d)
 done
 
 # [TMUX] bracket always fits
