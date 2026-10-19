@@ -1,5 +1,8 @@
-theme = Pencil Light
+theme = light:Pencil Light, dark:Pencil Dark
 font-family = JetBrainsMono Nerd Font
 font-size = 16
+
+gtk-titlebar = false
+macos-titlebar-style = hidden
 
 keybind = cmd+enter=unbind
